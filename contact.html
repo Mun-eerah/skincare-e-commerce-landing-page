@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+</head>
+<body>
+    <h2>Join for Tips & Deals</h2>
+    <form action="" onsubmit="alert('We have received your response! Thank you for joining us. You can check your email for further details.')" id="contact-form" autocomplete="off">
+        <label for="firstname">First Name</label> <br>
+        <input type="text" id="firstname" name="firstname" placeholder="First Name" required><br><br>
+        <label for="lastname">Last Name</label><br>
+        <input type="text" id="lastname" name="lastname" placeholder="Last Name" required><br><br>
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" placeholder="Email" required><br><br>
+        <label for="password">Password</label><br>
+        <input type="password" id="password" name="password" placeholder="Password"><br><br>
+        <label for="phone-number">Phone Number</label><br>
+        <input type="tel" id="phone-number" name="phone-number" placeholder="123-456-789" pattern="[0-9]{3}[0-9]{4}[0-9]{4}" title="11 digits only"><br>
+        <p>Select Your Skin Type (optional)</p>
+        <input type="radio" id="combination" name="skintype" value="combination">
+        <label for="combination">Combination</label> <br><br>          
+        <input type="radio" id="dry" name="skintype" value="dry">
+        <label for="dry">Dry</label> <br><br>
+        <input type="radio" id="normal" name="skintype" value="normal">
+        <label for="normal">Normal</label> <br><br>
+        <input type="radio" id="oily" name="skintype" value="oily">
+        <label for="oily">Oily</label> <br><br>
+        <p>How did you learn about CeraVe?. You can select one or more.</p>
+        <label for="social">Social Media</label>
+        <input type="checkbox" id="social" name="social"><br><br>
+        <label for="referral">Referral (Family/Friends)</label>
+        <input type="checkbox" id="referral" name="referral"><br><br>
+        <label for="randomly">Just came across it randomly</label>
+        <input type="checkbox" id="randomly" name="randomly"><br><br>
+        <label for="none">None</label>
+        <input type="checkbox" id="none" name="none"><br><br>
+        <input type="submit" value="SUBMIT">
+    </form>
+</body>
+</html>

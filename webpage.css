@@ -1,0 +1,670 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    align-items: center;
+    position: relative;
+}
+#cerave-logo {
+    margin-left: 50px;
+    width: 25%;
+    max-width: 150px;
+}
+.nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 55px;
+}
+.nav-links li a {
+    text-decoration: none;
+    color: hsl(0, 2%, 38%);
+    font-weight: normal;
+    font-size: small;
+}
+.search {
+    display: flex;
+    align-items: center;
+}
+#search-text {
+    background-color: #edebeb;
+    border: none;
+    height: 40px;
+    padding: 4px 15px;
+}
+#search-text:focus {
+    outline: none;
+}
+#search-icon {
+    background-color: #2C6DB2;
+    padding: 10px 12px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+.search-glass {
+    display: none;
+    font-size: 25px;
+    color: hsl(0, 2%, 68%);
+}
+.hamburger {
+    display: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+/* 📱 Styles for screens smaller than 768px (mobile phones) */
+@media screen and (min-width: 300px) and (max-width: 1249px) {
+   .navbar {
+        display: flex;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #f3f1f1;
+        position: absolute;
+        top: 55px;
+        left: 0;
+        right: 0;
+        gap: 10px;
+        padding: 20px;
+        font-size: 20px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        z-index: 100;
+        overflow: hidden;
+    }
+   .nav-links.show {
+        display: flex;
+    }
+    #cerave-logo {
+        margin-left: 0;
+    }
+    .mobile-icons {
+        display: flex;
+        gap: 20px;
+    }
+    .search-glass,
+    .hamburger {
+        display: block;
+    }
+    .search {
+        display: none;
+    }
+}
+.line {
+    border: thin solid hsl(0, 8%, 93%);
+}
+.header {
+    width: 100%;
+    max-width: 1800px;
+    margin: 0 auto;
+}
+#header-image {
+    margin-top: 10px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.products-header {
+    text-align: center;
+    color: hsl(211, 46%, 25%);
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    padding: 50px;
+}
+a {
+    text-decoration: none;
+    color: hsl(211, 46%, 25%);
+    font-size: small;
+    font-weight: bold;
+}
+.products img {
+    width: 100%;
+}
+.products {               /* this is the grid container*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;   /* or auto in 8 places to give 8 columns*/
+    padding: 30px;
+    gap: 20px;
+    width: 100%;
+    max-width: 1800px;
+    margin: 0 auto;
+}
+.products > a {
+    background-color: #f3f1f1;
+    align-content: center;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+    line-height: 24px;
+    font-size: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.products > a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+.products-button {
+    background-color: white;
+    color: #2C6DB2;
+    border: 1px solid #2C6DB2;
+    width: 15%;
+    margin: 0 auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 16px;
+}
+.products-button a {
+    font-size: large;
+    font-weight: bold;
+    color: #2C6DB2;
+}
+@media screen and (min-width: 300px) and (max-width: 1249px) {
+    .header {
+        max-width: 100%;
+    }
+    .products-header {
+        font-size: 25px;
+        font-weight: bold;
+        line-height: normal;
+        padding: 25px;
+    }
+    .products img {
+        width: 80%; 
+        margin: 10px;
+    }
+    .products {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));;
+        padding: 10px;
+        gap: 10px;
+    }
+    .products > a {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin-bottom: 5px;
+        font-size: small; 
+        line-height: 20px;
+    }
+    .products-button {
+        margin-top: 5px;
+        width: 50%;
+    }
+    .products-button a {
+        font-size: 10px;
+    }
+}
+section {
+    margin-top: 50px;
+}
+.section-first-images img {
+    max-width: 100%;
+    max-height: 80%;
+}
+.section-first-images {
+    display: grid;
+    gap: 15px;
+    width: 100%;
+    max-width: 1800px;
+    margin: 0 auto;
+    grid-template-areas: 'item1 item1 item2 item2'
+                         'item1 item1 item3 item3';
+}
+#section-image1 {
+    grid-area: item1;
+    max-height: 90%;
+}
+#section-image2 {
+    grid-area: item2;
+    margin-bottom: 10px;
+}
+#section-image3 {
+    grid-area: item3;
+    margin-bottom: 10px;
+} 
+.dermatologist-view {
+    background-color: #f3f1f1;
+    height: 400px;
+    padding: 40px;
+    margin-bottom: 25px;
+}
+.dermatologist-view p {
+    font-size: 45px;
+    margin-left: 40px;
+    margin-bottom: 30px;
+    color:#706e6e;
+}
+.dermatologist-view img {
+    width: 300px;
+    float: right;
+    margin: 10px;
+    padding-top: 35px;
+    margin-right: 30px;
+}
+.dermatologist-view div {
+   height: 200px;
+   margin: 40px;
+   padding-top: 20px;
+}
+.dermatologist-view > div > span {
+    color: #2a3f55;
+    font-weight: bold;
+    font-size: larger;
+}
+.dermatologist-view > div > a {
+    padding-left: 25px;
+    color: #2C6DB2;
+    font-size: larger;
+    font-weight: bold;
+}
+.second-section {
+    display: grid;
+    width: 100%;
+    max-width: 1800px;
+    gap: 150px;
+    padding: 50px;
+    grid-template-areas: 'image1 text1'
+                         'image2 text2'
+                         'image3 text3';
+    justify-content: center;
+}
+.second-section img {
+    width: 100%;
+    max-width: 650px;
+}
+.second-section-div1 {
+    grid-area: image1;
+    display: flex;
+    align-items: center;
+}
+.second-section-div2 {
+    grid-area: image2;
+    display: flex;
+    align-items: center;
+}
+.second-section-div3 {
+    grid-area: image3;
+    display: flex;
+    align-items: center;
+}
+.second-section-text1,
+.second-section-text2,
+.second-section-text3 {
+    max-width: 600px;
+    padding-left: 100px;
+    padding-bottom: 25px;
+}
+.second-section-text1 {
+    grid-area: text1;
+}
+.second-section-text2 {
+    grid-area: text2;
+}
+.second-section-text3 {
+    grid-area: text3;
+}
+.second-section h1 {
+    font-size: 40px;
+    color: #2a3f55;
+}
+.second-section p {
+    font-size: 20px;
+}
+.second-section a {
+    background-color: #2a3f55;
+    color: white;
+    font-weight: bold;
+    padding: 16px 40px;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+.fav-header {
+    text-align: center;
+    color: #2a3f55;
+    margin: 100px;
+    font-size: 40px;
+}
+.fav-sections {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1800px;
+    margin-bottom: 100px;
+}
+.fav-sections img {
+    width: 100%;
+    max-width: 250px;
+}
+.fav-section {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.fav-section h3 {
+    font-size: 25px;
+    max-width: 100%;
+    text-align: center;
+}
+.ratings {
+    font-size: 20px;
+    color: #2C6DB2;
+}
+.ratings-number {
+    font-size: 15px;
+    color: hsl(0, 1%, 58%);
+}
+@media screen and (min-width: 300px) and (max-width: 1249px) {
+    .section-first-images {
+        display: block;
+    }
+    #section-image1,
+    #section-image2,
+    #section-image3 {
+        margin-bottom: 40px;
+    }
+    .dermatologist-view {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+    }
+    .dermatologist-view img {
+        padding-top: 0;
+        margin: 0;
+        margin-bottom: 15px;
+        width: 150px;
+        float: none;
+    }
+    .dermatologist-view p {
+        font-size: 24px;
+        margin: 0;
+    }
+    .dermatologist-view div {
+        margin: 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        padding-top: 50px;
+        font-size: small;
+    }
+    .dermatologist-view > div > a {
+        margin-top: 20px;
+    }
+    .second-section {
+        display: block;
+        padding: 15px;
+        margin-top: 70px;
+    }
+    .second-section-div1, .second-section-div2, .second-section-div3 {
+        display: block;
+    }
+    .second-section-text1, .second-section-text2, .second-section-text3 {
+        padding-left: 0;
+        margin-bottom: 60px;
+    }
+    .second-section h1 {
+        font-size: 24px;
+        padding-top: 5px;
+    }
+    .second-section p {
+        font-size: 16px;
+        padding-top: 0;
+        padding-bottom: 10px;
+    }
+    .second-section a {
+       padding: 12px 20px;
+       font-size: 13px;
+    }
+    .fav-header {
+        margin: 0;
+        font-size: 20px;
+    }
+    .fav-section h3 {
+        font-size: 18px;
+    }
+    .ratings {
+        font-size: 14px;
+    }
+    .ratings-number {
+        font-size: 12px;
+    }
+    .fav-sections {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: mandatory;
+        -webkit-overflow-scrolling: touch;
+        gap: 10px;
+        padding: 10px;
+        margin-bottom: 30px;
+    }
+    .fav-sections img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .fav-section {
+        flex: 0 0 100%;
+        scroll-snap-align: start;
+    }
+    .fav-section h3,
+    .fav-section .ratings {
+        text-align: center;
+    }
+}
+article {
+    margin-top: 100px;
+    background-color: #26405f;
+    color: white;
+}
+article h1 {
+    text-align: center;
+    padding-top: 70px;
+    font-size: 40px;
+}
+article img {
+    width: 100%;
+    max-width: 1800px;
+}
+.article-containers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 70px;
+}
+.article-container {
+    background-color: white;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    padding: 15px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.article-container:hover {
+    transform: scale(1.03);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+.article-container h2 {
+    color: hsl(0, 1%, 58%);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.article-container h3 {
+    color: #3179c5;
+    font-size: 30px;
+}
+.article-container p {
+    color: black;
+    font-size: 18px;
+}
+.article-a a {
+    text-decoration: underline;
+    color: #367fce;  
+    font-size: 18px;
+    font-weight: normal;
+}
+.article-text {
+    padding: 1px;
+}
+.faq {
+    background-color: #f3f1f1;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+}
+.faq h2 {
+    color: #2C6DB2;
+    font-weight: 800;
+    text-align: center;
+    padding-top: 30px;
+}
+.faq h1 {
+    text-align: center;
+    line-height: 1px;
+    font-size: 40px;
+}
+.faq-buttons {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    letter-spacing: 2px;
+    /* margin-bottom: 25px; */
+}
+.faq-buttons #contact {
+    background-color: white;
+    padding: 15px 45px;
+    border: 1px solid #2C6DB2;
+    color: #2C6DB2;
+    font-weight: 600;
+    margin-right: 20px;
+    font-size: 20px;
+}
+.faq-buttons #faq {
+    background-color: #2C6DB2;
+    padding: 15px 45px;
+    color: white;
+    font-weight: 600;
+    margin-left: 20px;
+    font-size: 20px;
+}
+footer {
+    background-color: #26405f;
+    color: white;
+    padding: 40px;
+    padding-left: 60px;
+}
+footer a {
+    color: white;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 35px;
+    width: 250px;
+}
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    max-width: 1800px; 
+    justify-content: space-evenly;
+    gap: 20px;
+}
+.footers {
+    display: grid;
+}
+footer img {
+    padding-top: 200px;
+    padding-bottom: 50px;
+}
+.footer-text {
+    font-size: 15px;
+}
+@media screen and (min-width: 300px) and (max-width: 1249px) {
+    article {
+        margin-top: 40px;
+    }
+    article h1 {
+        padding-top: 25px;
+        font-size: 24px;
+    }
+    .article-containers {
+        display: block;
+        padding: 10px;
+    }
+    .article-container {
+        display: block;
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+    .article-container h2 {font-weight: 600; font-size: small;}
+    .article-container h3 {font-size: 20px;}
+    .article-container p {font-size: 17px;}
+    .article-text h2,
+    .article-text h3,
+    .article-text p {
+        margin: 0;
+        padding: 5px 0;
+    }
+    .faq {
+        padding: 5px;
+    }
+    .faq h2 {
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+    .faq h1 {
+        font-size: 25px;
+    }
+    .faq-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        margin-top: 0;
+    }
+    .faq-buttons #contact, .faq-buttons #faq {
+        font-size: small;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+    footer {
+        padding: 20px;
+        position: relative;
+    }
+    footer a {
+        font-size: 13px;
+    }
+    .footer-container {
+        display: block;
+        margin-top: 80px;
+        font-size: 1;
+    }
+    footer img {
+        position: absolute;
+        left: 0;
+        top:0;
+        width: 25%;
+        padding-top: 0;
+        margin: 40px 35%;
+    }
+    .footers h3 {
+        font-size: 16px;
+    }
+    .footer-text {
+        font-size: 12px;
+    }
+}
