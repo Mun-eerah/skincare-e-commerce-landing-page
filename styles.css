@@ -14,6 +14,12 @@ body {
     align-items: center;
     position: relative;
 }
+.logo-text{
+    color: hsl(211, 46%, 25%);
+    display: flex;
+    gap: 10px;
+    /* margin-left: 10px; */
+}
 #cerave-logo {
     margin-left: 50px;
     width: 25%;
@@ -170,6 +176,10 @@ a {
     color: #2C6DB2;
 }
 @media screen and (min-width: 300px) and (max-width: 1249px) {
+    .logo-text {
+        color: hsl(211, 46%, 25%);
+        font-size: 23px;
+    }
     .header {
         max-width: 100%;
     }
@@ -236,7 +246,7 @@ section {
 .dermatologist-view {
     background-color: #f3f1f1;
     height: 400px;
-    padding: 40px;
+    padding-top: 40px;
     margin-bottom: 25px;
 }
 .dermatologist-view p {
@@ -246,7 +256,7 @@ section {
     color:#706e6e;
 }
 .dermatologist-view img {
-    width: 300px;
+    width: 400px;
     float: right;
     margin: 10px;
     padding-top: 35px;
@@ -282,6 +292,7 @@ section {
 .second-section img {
     width: 100%;
     max-width: 650px;
+    padding: 10px;
 }
 .second-section-div1 {
     grid-area: image1;
@@ -346,6 +357,8 @@ section {
 .fav-sections img {
     width: 100%;
     max-width: 250px;
+    border-radius: 20px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
 }
 .fav-section {
     display: flex;
@@ -386,7 +399,7 @@ section {
         padding-top: 0;
         margin: 0;
         margin-bottom: 15px;
-        width: 150px;
+        width: 250px;
         float: none;
     }
     .dermatologist-view p {
@@ -650,7 +663,7 @@ footer img {
     }
     .footer-container {
         display: block;
-        margin-top: 80px;
+        /* margin-top: 80px; */
         font-size: 1;
     }
     footer img {
