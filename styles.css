@@ -15,9 +15,10 @@ body {
     position: relative;
 }
 .logo-text{
-    color: hsl(211, 46%, 25%);
+    color: #3f97e9;
     display: flex;
     gap: 10px;
+    font-weight: bold;
     /* margin-left: 10px; */
 }
 #cerave-logo {
@@ -51,7 +52,8 @@ body {
     outline: none;
 }
 #search-icon {
-    background-color: #2C6DB2;
+    /* background-color: #2C6DB2; */
+    background-color: #3f97e9;
     padding: 10px 12px;
     color: white;
     font-size: 20px;
@@ -60,12 +62,13 @@ body {
 .search-glass {
     display: none;
     font-size: 25px;
-    color: hsl(0, 2%, 68%);
+    color: #3f97e9;
 }
 .hamburger {
     display: none;
     font-size: 25px;
     cursor: pointer;
+    color: #3f97e9;
 }
 /* 📱 Styles for screens smaller than 768px (mobile phones) */
 @media screen and (min-width: 300px) and (max-width: 1249px) {
@@ -120,7 +123,7 @@ body {
 }
 .products-header {
     text-align: center;
-    color: hsl(211, 46%, 25%);
+    color: #3f97e9;
     font-weight: 600;
     font-size: 45px;
     line-height: 18px;
@@ -129,7 +132,7 @@ body {
 }
 a {
     text-decoration: none;
-    color: hsl(211, 46%, 25%);
+    color: #3f97e9;
     font-size: small;
     font-weight: bold;
 }
@@ -147,6 +150,7 @@ a {
 }
 .products > a {
     background-color: #f3f1f1;
+    color: #3f97e9;
     align-content: center;
     padding: 20px;
     text-align: center;
@@ -161,8 +165,8 @@ a {
 }
 .products-button {
     background-color: white;
-    color: #2C6DB2;
-    border: 1px solid #2C6DB2;
+    color: #3f97e9;
+    border: 1px solid #3f97e9;
     width: 15%;
     margin: 0 auto;
     display: flex;
@@ -173,11 +177,10 @@ a {
 .products-button a {
     font-size: large;
     font-weight: bold;
-    color: #2C6DB2;
+    color: #3f97e9;
 }
 @media screen and (min-width: 300px) and (max-width: 1249px) {
     .logo-text {
-        color: hsl(211, 46%, 25%);
         font-size: 23px;
     }
     .header {
@@ -253,7 +256,7 @@ section {
     font-size: 45px;
     margin-left: 40px;
     margin-bottom: 30px;
-    color:#706e6e;
+    color:#3f97e9;
 }
 .dermatologist-view img {
     width: 400px;
@@ -327,13 +330,14 @@ section {
 }
 .second-section h1 {
     font-size: 40px;
-    color: #2a3f55;
+    color: #3f97e9;
 }
 .second-section p {
     font-size: 20px;
 }
 .second-section a {
-    background-color: #2a3f55;
+    /* background-color: #2a3f55; */
+    background-color: #3f97e9;
     color: white;
     font-weight: bold;
     padding: 16px 40px;
@@ -342,7 +346,7 @@ section {
 }
 .fav-header {
     text-align: center;
-    color: #2a3f55;
+    color: #3f97e9;
     margin: 100px;
     font-size: 40px;
 }
@@ -372,11 +376,13 @@ section {
 }
 .ratings {
     font-size: 20px;
-    color: #2C6DB2;
+    color: #3f97e9;
+    /* color: #2C6DB2; */
 }
 .ratings-number {
     font-size: 15px;
-    color: hsl(0, 1%, 58%);
+    color: #3f97e9;
+    /* color: hsl(0, 1%, 58%); */
 }
 @media screen and (min-width: 300px) and (max-width: 1249px) {
     .section-first-images {
@@ -480,7 +486,8 @@ section {
 }
 article {
     margin-top: 100px;
-    background-color: #26405f;
+    /* background-color: #26405f; */
+    background-color: #3f97e9;
     color: white;
 }
 article h1 {
@@ -540,7 +547,8 @@ article img {
     padding: 10px;
 }
 .faq h2 {
-    color: #2C6DB2;
+    color: #3f97e9;
+    /* color: #2C6DB2; */
     font-weight: 800;
     text-align: center;
     padding-top: 30px;
@@ -560,14 +568,14 @@ article img {
 .faq-buttons #contact {
     background-color: white;
     padding: 15px 45px;
-    border: 1px solid #2C6DB2;
-    color: #2C6DB2;
+    border: 1px solid #3f97e9;
+    color: #3f97e9;
     font-weight: 600;
     margin-right: 20px;
     font-size: 20px;
 }
 .faq-buttons #faq {
-    background-color: #2C6DB2;
+    background-color: #3f97e9;
     padding: 15px 45px;
     color: white;
     font-weight: 600;
@@ -575,7 +583,8 @@ article img {
     font-size: 20px;
 }
 footer {
-    background-color: #26405f;
+    /* background-color: #26405f; */
+    background-color: #3f97e9;
     color: white;
     padding: 40px;
     padding-left: 60px;
