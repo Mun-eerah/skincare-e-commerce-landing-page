@@ -10,7 +10,7 @@ body {
 .navbar {
     display: flex;
     justify-content: space-between;
-    padding: 15px 40px;
+    padding: 15px 30px;
     align-items: center;
     position: relative;
 }
@@ -19,12 +19,7 @@ body {
     display: flex;
     gap: 10px;
     font-weight: bold;
-    /* margin-left: 10px; */
-}
-#cerave-logo {
-    margin-left: 50px;
-    width: 25%;
-    max-width: 150px;
+    margin-left: 100px;
 }
 .nav-links {
     display: flex;
@@ -74,6 +69,14 @@ body {
 @media screen and (min-width: 300px) and (max-width: 1249px) {
    .navbar {
         display: flex;
+        justify-content: space-between;
+        gap: 50px;
+        padding: 8px 15px;
+    }
+    .logo-text {
+        font-size: 16px;
+        display: block;
+        margin-left: 0;
     }
     .nav-links {
         display: none;
@@ -91,7 +94,7 @@ body {
         overflow: hidden;
     }
    .nav-links.show {
-        display: flex;
+        display: flex; 
     }
     #cerave-logo {
         margin-left: 0;
@@ -103,6 +106,7 @@ body {
     .search-glass,
     .hamburger {
         display: block;
+        font-size: 16px;
     }
     .search {
         display: none;
@@ -180,9 +184,6 @@ a {
     color: #3f97e9;
 }
 @media screen and (min-width: 300px) and (max-width: 1249px) {
-    .logo-text {
-        font-size: 23px;
-    }
     .header {
         max-width: 100%;
     }
