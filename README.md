@@ -1,9 +1,9 @@
 **Disclaimer:** This project is a frontend clone created for educational and portfolio purposes only. It is not affiliated with, endorsed by, or representative of the official CeraVe brand or website. All original design elements, branding, and content belong to their respective owners.
-# CeraVe Website Clone
+# Skincare E-commerce Landing Page
 A meticulous and fully responsive frontend clone of the official CeraVe product website. This project was undertaken to demonstrate proficiency in modern frontend development practices, attention to design detail, and the ability to replicate complex user interfaces.
 ## 🌐 Live Demo
 Explore the live clone here:
-[**CeraVe Website Clone Live Demo**](https://mun-eerah.github.io/cerave-website-clone/)
+[**Skincare E-commerce Landing Page Live Demo**](https://mun-eerah.github.io/skincare-e-commerce-landing-page/)
 **📝Project Overview**
 
 A meticulous and fully responsive frontend clone of the official CeraVe product website. This project was undertaken to demonstrate proficiency in modern frontend development practices, attention to design detail, and the ability to replicate complex user interfaces.
